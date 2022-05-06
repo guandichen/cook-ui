@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Collapse 折叠面板</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.0cbd6db2.css" as="style"><link rel="preload" href="/assets/js/app.579fb40f.js" as="script"><link rel="preload" href="/assets/js/2.d8fbe9a8.js" as="script"><link rel="preload" href="/assets/js/16.d5bc83d0.js" as="script"><link rel="preload" href="/assets/js/6.9f46d5e6.js" as="script"><link rel="preload" href="/assets/js/12.1e4a8ba2.js" as="script"><link rel="prefetch" href="/assets/js/10.433d7915.js"><link rel="prefetch" href="/assets/js/11.c7c3cebf.js"><link rel="prefetch" href="/assets/js/13.40b991d1.js"><link rel="prefetch" href="/assets/js/14.41abbd68.js"><link rel="prefetch" href="/assets/js/15.9cdd5953.js"><link rel="prefetch" href="/assets/js/17.fc741a05.js"><link rel="prefetch" href="/assets/js/3.8628b6c1.js"><link rel="prefetch" href="/assets/js/4.e8052498.js"><link rel="prefetch" href="/assets/js/5.888e81fa.js"><link rel="prefetch" href="/assets/js/7.359bad2c.js"><link rel="prefetch" href="/assets/js/8.f024c08e.js"><link rel="prefetch" href="/assets/js/9.f12dad61.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0cbd6db2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/component/button.html" class="sidebar-link">Button 按钮</a></li><li><a href="/component/icon.html" class="sidebar-link">Icon 图标</a></li><li><a href="/component/divider.html" class="sidebar-link">Divider 分割线</a></li><li><a href="/component/alert.html" class="sidebar-link">Alert 弹窗</a></li><li><a href="/component/collapse.html" aria-current="page" class="active sidebar-link">Collapse 折叠面板</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/component/collapse.html#代码演示" class="sidebar-link">代码演示</a></li><li class="sidebar-sub-header"><a href="/component/collapse.html#api" class="sidebar-link">API</a></li></ul></li><li><a href="/component/tooltip.html" class="sidebar-link">Tooltip 文字提示</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="代码演示"><a href="#代码演示" class="header-anchor">#</a> 代码演示</h2> <div class="component-example-box"><section class="code-box-demo"><div class="collapse-demos"><div class="cook-collapse"><div class="cook-collapse-item"><div data-key="1" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header1
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div> <div class="cook-collapse-item"><div data-key="2" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header2
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div> <div class="cook-collapse-item"><div data-key="3" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header3
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div></div></div></section> <section class="description"><div class="cook-divider cook-divider-horizontal cook-divider-with-text-left"><span class="cook-divider-inner-text">折叠面板</span></div> <div class="info">
+    可以同时展开多个面板，这里默认展开第2个
+  </div></section> <section class="code-preview-box"><div class="cook-collapse"><div class="cook-collapse-item"><div class="cook-collapse-header"><!----> <!----> <span class="icon-box"><i class="iconfont cook-icon icon-copy"></i></span> <span class="icon-box"><i class="iconfont cook-icon icon-code"></i></span>
+    
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body"> <div>  <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>collapse-demos<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse</span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>activeKey<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>3<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header3<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">activeKey</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'2'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">content</span><span class="token operator">:</span>
+        <span class="token string">'Performs a deep comparison between two values to determine if they are equivalent.'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">activeKey</span><span class="token punctuation">(</span><span class="token parameter">newV</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newV<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div></div></div></div></div></section></div> <div class="component-example-box"><section class="code-box-demo"><div class="collapse-demos"><div class="cook-collapse"><div class="cook-collapse-item"><div data-key="1" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header1
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div> <div class="cook-collapse-item"><div data-key="2" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header2
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div> <div class="cook-collapse-item"><div data-key="3" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header3
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div></div></div></section> <section class="description"><div class="cook-divider cook-divider-horizontal cook-divider-with-text-left"><span class="cook-divider-inner-text">手风琴</span></div> <div class="info">
+    手风琴，每次只打开一个tab，默认打开第一个
+  </div></section> <section class="code-preview-box"><div class="cook-collapse"><div class="cook-collapse-item"><div class="cook-collapse-header"><!----> <!----> <span class="icon-box"><i class="iconfont cook-icon icon-copy"></i></span> <span class="icon-box"><i class="iconfont cook-icon icon-code"></i></span>
+    
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body"> <div>  <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>collapse-demos<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse</span> <span class="token attr-name">accordion</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>3<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header3<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">content</span><span class="token operator">:</span>
+        <span class="token string">'Performs a deep comparison between two values to determine if they are equivalent.'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div></div></div></div></div></section></div> <div class="component-example-box"><section class="code-box-demo"><div class="collapse-demos"><div class="cook-collapse"><div class="cook-collapse-item"><div data-key="1" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header1
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body"><div class="cook-collapse"><div class="cook-collapse-item"><div data-key="1" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Nest panel header
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+          Performs a deep comparison between two values to determine if they are equivalent.</div></div></div></div></div></div></div> <div class="cook-collapse-item"><div data-key="2" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header2
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div> <div class="cook-collapse-item"><div data-key="3" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header3
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div></div></div></section> <section class="description"><div class="cook-divider cook-divider-horizontal cook-divider-with-text-left"><span class="cook-divider-inner-text">面板嵌套</span></div> <div class="info">
+    嵌套折叠面板
+  </div></section> <section class="code-preview-box"><div class="cook-collapse"><div class="cook-collapse-item"><div class="cook-collapse-header"><!----> <!----> <span class="icon-box"><i class="iconfont cook-icon icon-copy"></i></span> <span class="icon-box"><i class="iconfont cook-icon icon-code"></i></span>
+    
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body"> <div>  <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>collapse-demos<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse</span> <span class="token attr-name">:activeKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[<span class="token punctuation">'</span>1<span class="token punctuation">'</span>]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Nest panel header<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            {{ content }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span>
+          <span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>3<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header3<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">content</span><span class="token operator">:</span>
+        <span class="token string">'Performs a deep comparison between two values to determine if they are equivalent.'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div></div></div></div></div></section></div> <div class="component-example-box"><section class="code-box-demo"><div class="collapse-demos"><div class="cook-collapse cook-collapse-no-border"><div class="cook-collapse-item"><div data-key="1" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header1
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div> <div class="cook-collapse-item"><div data-key="2" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header2
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div> <div class="cook-collapse-item"><div data-key="3" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header3
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div></div></div></section> <section class="description"><div class="cook-divider cook-divider-horizontal cook-divider-with-text-left"><span class="cook-divider-inner-text">简洁风格</span></div> <div class="info">
+    没有边框的折叠面板
+  </div></section> <section class="code-preview-box"><div class="cook-collapse"><div class="cook-collapse-item"><div class="cook-collapse-header"><!----> <!----> <span class="icon-box"><i class="iconfont cook-icon icon-copy"></i></span> <span class="icon-box"><i class="iconfont cook-icon icon-code"></i></span>
+    
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body"> <div>  <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>collapse-demos<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse</span> <span class="token attr-name">:bordered</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>3<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header3<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">content</span><span class="token operator">:</span>
+        <span class="token string">'Performs a deep comparison between two values to determine if they are equivalent.'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div></div></div></div></div></section></div> <div class="component-example-box"><section class="code-box-demo"><div class="collapse-demos"><div class="cook-collapse"><div class="cook-collapse-item"><div data-key="1" class="cook-collapse-header"><!----> <!----> 
+    Panel header1
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div> <div class="cook-collapse-item"><div data-key="2" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header2
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div> <div class="cook-collapse-item"><div data-key="3" class="cook-collapse-header"><span class="icon-box"><i class="iconfont cook-icon icon-forward"></i></span>  
+    Panel header3
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body">
+      Performs a deep comparison between two values to determine if they are equivalent.
+    </div></div></div></div></div></section> <section class="description"><div class="cook-divider cook-divider-horizontal cook-divider-with-text-left"><span class="cook-divider-inner-text">隐藏箭头</span></div> <div class="info">
+    可以通过 <span style="color:#c41d7f;">:showArrow = 'false'</span> 隐藏 <span style="color:#1890ff;">c-collapse-panel</span> 的箭头图标
+  </div></section> <section class="code-preview-box"><div class="cook-collapse"><div class="cook-collapse-item"><div class="cook-collapse-header"><!----> <!----> <span class="icon-box"><i class="iconfont cook-icon icon-copy"></i></span> <span class="icon-box"><i class="iconfont cook-icon icon-code"></i></span>
+    
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body"> <div>  <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>collapse-demos<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:showArrow</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-collapse-panel</span> <span class="token attr-name">panelKey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>3<span class="token punctuation">&quot;</span></span> <span class="token attr-name">header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Panel header3<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ content }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse-panel</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-collapse</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">content</span><span class="token operator">:</span>
+        <span class="token string">'Performs a deep comparison between two values to determine if they are equivalent.'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div></div></div></div></div></section></div> <h2 id="api"><a href="#api" class="header-anchor">#</a> API</h2> <h3 id="collapse"><a href="#collapse" class="header-anchor">#</a> Collapse</h3> <table><thead><tr><th>参数</th> <th>说明</th> <th>类型</th> <th>默认值</th></tr></thead> <tbody><tr><td>activeKey(v-model)</td> <td>当前活跃的 tab 面板的 key</td> <td><code>string</code>或<code>string[]</code></td> <td>默认无，手风琴模式下默认第一个</td></tr> <tr><td>bordered</td> <td>带边框风格的折叠面板</td> <td><code>boolean</code></td> <td>-</td></tr> <tr><td>accordion</td> <td>手风琴模式</td> <td><code>boolean</code></td> <td>false</td></tr></tbody></table> <h3 id="事件"><a href="#事件" class="header-anchor">#</a> 事件</h3> <table><thead><tr><th>事件名称</th> <th>说明</th> <th>回调参数</th></tr></thead> <tbody><tr><td>change</td> <td>切换面板时的回调</td> <td><span style="color:#c41d7f;">function (key)</span></td></tr></tbody></table> <h3 id="collapse-panel"><a href="#collapse-panel" class="header-anchor">#</a> Collapse.Panel</h3> <table><thead><tr><th>参数</th> <th>说明</th> <th>类型</th> <th>默认值</th></tr></thead> <tbody><tr><td>header</td> <td>面板头内容</td> <td><code>string</code> 或<code>slot</code></td> <td>-</td></tr> <tr><td>showArrow</td> <td>是否展示面板上的箭头</td> <td><code>boolean</code></td> <td>true</td></tr> <tr><td>disabled</td> <td>面板是否禁用</td> <td><code>boolean</code></td> <td>false</td></tr> <tr><td>panelKey</td> <td>对应<code>activeKey</code></td> <td><code>string</code></td> <td>-</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/component/alert.html" class="prev">
+        Alert 弹窗
+      </a></span> <span class="next"><a href="/component/tooltip.html">
+        Tooltip 文字提示
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.579fb40f.js" defer></script><script src="/assets/js/2.d8fbe9a8.js" defer></script><script src="/assets/js/16.d5bc83d0.js" defer></script><script src="/assets/js/6.9f46d5e6.js" defer></script><script src="/assets/js/12.1e4a8ba2.js" defer></script>
+  </body>
+</html>

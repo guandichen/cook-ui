@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Divider 分割线</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.0cbd6db2.css" as="style"><link rel="preload" href="/assets/js/app.579fb40f.js" as="script"><link rel="preload" href="/assets/js/2.d8fbe9a8.js" as="script"><link rel="preload" href="/assets/js/3.8628b6c1.js" as="script"><link rel="preload" href="/assets/js/6.9f46d5e6.js" as="script"><link rel="preload" href="/assets/js/12.1e4a8ba2.js" as="script"><link rel="prefetch" href="/assets/js/10.433d7915.js"><link rel="prefetch" href="/assets/js/11.c7c3cebf.js"><link rel="prefetch" href="/assets/js/13.40b991d1.js"><link rel="prefetch" href="/assets/js/14.41abbd68.js"><link rel="prefetch" href="/assets/js/15.9cdd5953.js"><link rel="prefetch" href="/assets/js/16.d5bc83d0.js"><link rel="prefetch" href="/assets/js/17.fc741a05.js"><link rel="prefetch" href="/assets/js/4.e8052498.js"><link rel="prefetch" href="/assets/js/5.888e81fa.js"><link rel="prefetch" href="/assets/js/7.359bad2c.js"><link rel="prefetch" href="/assets/js/8.f024c08e.js"><link rel="prefetch" href="/assets/js/9.f12dad61.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0cbd6db2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/component/button.html" class="sidebar-link">Button 按钮</a></li><li><a href="/component/icon.html" class="sidebar-link">Icon 图标</a></li><li><a href="/component/divider.html" aria-current="page" class="active sidebar-link">Divider 分割线</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/component/divider.html#代码演示" class="sidebar-link">代码演示</a></li></ul></li><li><a href="/component/alert.html" class="sidebar-link">Alert 弹窗</a></li><li><a href="/component/collapse.html" class="sidebar-link">Collapse 折叠面板</a></li><li><a href="/component/tooltip.html" class="sidebar-link">Tooltip 文字提示</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="代码演示"><a href="#代码演示" class="header-anchor">#</a> 代码演示</h2> <div class="component-example-box"><section class="code-box-demo"><div class="divider-demos" data-v-6238a984><span data-v-6238a984>Text</span> <div class="cook-divider cook-divider-vetical" data-v-6238a984><!----></div> <a href data-v-6238a984>Link</a> <div class="cook-divider cook-divider-vetical" data-v-6238a984><!----></div> <a href data-v-6238a984>Link</a></div></section> <section class="description"><div class="cook-divider cook-divider-horizontal cook-divider-with-text-left"><span class="cook-divider-inner-text">竖直分割线</span></div> <div class="info">
+    使用 type = 'vetical' 设置为行内的垂直分割线。
+  </div></section> <section class="code-preview-box"><div class="cook-collapse"><div class="cook-collapse-item"><div class="cook-collapse-header"><!----> <!----> <span class="icon-box"><i class="iconfont cook-icon icon-copy"></i></span> <span class="icon-box"><i class="iconfont cook-icon icon-code"></i></span>
+    
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body"> <div>  <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>divider-demos<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-divider</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>vetical<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-divider</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>vetical<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+<span class="token selector">.divider-demos</span> <span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+
+  <span class="token selector">span,
+  a</span> <span class="token punctuation">{</span>
+    <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div></div></div></div></div></section></div> <div class="component-example-box"><section class="code-box-demo"><div class="divider-wrap" data-v-796ef150><div class="cook-divider cook-divider-horizontal" data-v-796ef150><span class="cook-divider-inner-text"></span></div> <p data-v-796ef150>
+    Performs a deep comparison between two values to determine if they are
+    equivalent.
+  </p> <div class="cook-divider cook-divider-horizontal" data-v-796ef150><span class="cook-divider-inner-text">Text</span></div> <p data-v-796ef150>
+    Performs a deep comparison between two values to determine if they are
+    equivalent.
+  </p> <div class="cook-divider cook-divider-horizontal cook-divider-with-text-left" data-v-796ef150><span class="cook-divider-inner-text">Left Text</span></div> <p data-v-796ef150>
+    Performs a deep comparison between two values to determine if they are
+    equivalent.
+  </p> <div class="cook-divider cook-divider-horizontal cook-divider-with-text-right" data-v-796ef150><span class="cook-divider-inner-text">Right Text</span></div></div></section> <section class="description"><div class="cook-divider cook-divider-horizontal cook-divider-with-text-left"><span class="cook-divider-inner-text">可带文字的水平分割线</span></div> <div class="info">
+    默认为水平分割线，可在中间加入文字，通过 orientation 来设置文字的位置。
+  </div></section> <section class="code-preview-box"><div class="cook-collapse"><div class="cook-collapse-item"><div class="cook-collapse-header"><!----> <!----> <span class="icon-box"><i class="iconfont cook-icon icon-copy"></i></span> <span class="icon-box"><i class="iconfont cook-icon icon-code"></i></span>
+    
+  </div> <div class="cook-collapse-content"><div class="cook-collapse-content-body"> <div>  <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>divider-wrap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-divider</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+      Performs a deep comparison between two values to determine if they are
+      equivalent.
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-divider</span><span class="token punctuation">&gt;</span></span>Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-divider</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+      Performs a deep comparison between two values to determine if they are
+      equivalent.
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-divider</span> <span class="token attr-name">orientation</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>left<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Left Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-divider</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+      Performs a deep comparison between two values to determine if they are
+      equivalent.
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>c-divider</span> <span class="token attr-name">orientation</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Right Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>c-divider</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+<span class="token selector">.divider-wrap &gt;&gt;&gt; p</span> <span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span>104<span class="token punctuation">,</span> 102<span class="token punctuation">,</span> 102<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div></div></div></div></div></section></div> <h3 id="api"><a href="#api" class="header-anchor">#</a> API</h3> <table><thead><tr><th>参数</th> <th>说明</th> <th>类型</th> <th>默认值</th></tr></thead> <tbody><tr><td>type</td> <td>水平还是竖直分割线</td> <td>enum: <code>horizontal</code> <code>vertical</code></td> <td><span style="color:#c41d7f;">horizontal</span></td></tr> <tr><td>orientation</td> <td>分割线标题的位置</td> <td>enum: <code>left</code> <code>right</code> <code>center</code></td> <td><span style="color:#c41d7f;">center</span></td></tr> <tr><td>dashed</td> <td>是否虚线</td> <td>Boolean</td> <td><span style="color:#c41d7f;">false</span></td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/component/icon.html" class="prev">
+        Icon 图标
+      </a></span> <span class="next"><a href="/component/alert.html">
+        Alert 弹窗
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.579fb40f.js" defer></script><script src="/assets/js/2.d8fbe9a8.js" defer></script><script src="/assets/js/3.8628b6c1.js" defer></script><script src="/assets/js/6.9f46d5e6.js" defer></script><script src="/assets/js/12.1e4a8ba2.js" defer></script>
+  </body>
+</html>
